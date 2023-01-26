@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulário de Pesquisa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Formulário de Pesquisa de Interesses</h1>
+  </header>
+  <main>
+    <form>
+      <div class="nome">
+        <h4>Nome e sobrenome:</h4>
+        <input type="text" id="nome" size="35" value="" required>
+      </div>
+
+      <div class="endereco">
+        <h4>Endereço:</h4>
+        <input type="text" id="endereco" required> 
+        <input type="number" id="numero" placeholder="Nº" required>
+        <input type="text" id="complemento" placeholder="Complemento" required><br>
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" required><br>
+        <label for="estado" style="padding-right: 2px;">Estado</label>
+        <input type="text" id="estado" required><br>
+        <label for="cep" style="    padding-right: 17px;">CEP</label>
+        <input type="text" id="cep" placeholder="XXXXX-XXX" required>
+      </div>
+
+      <div class="contatos">  
+        <h4>Contato:</h4>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required><br>
+        <label for="email" style="padding-right: 12px;" required>E-mail</label>
+        <input type="email" id="email" placeholder="seuemail@dominio.com" required>
+      </div>
+
+      <div class="genero">
+        <h4>Gênero:</h4>
+        <input type="radio" name="genero" id="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="outro">
+        <label for="outro">Outro</label>
+      </div>
+
+      <div class="questao">
+        <h4>Avalie nossos produtos/serviços</h4>
+        <h6>Com que frequência você utiliza nossos produtos/serviços?</h6>
+        <input type="radio" name="questao1" id="1" value="1">
+        <label for="1">1</label>
+        <input type="radio" name="questao1" id="2" value="2">
+        <label for="2">2</label>
+        <input type="radio" name="questao1" id="3" value="3">
+        <label for="3">3</label>
+        <input type="radio" name="questao1" id="4" value="4">
+        <label for="4">4</label>
+        <input type="radio" name="questao1" id="5" value="5">
+        <label for="5">5</label>
+        <h6>Nossos produtos/serviços te ajudaram a atingir seus objetivos?</h6>
+        <input type="radio" name="questao2" id="1" value="1">
+        <label for="1">1</label>
+        <input type="radio" name="questao2" id="2" value="2">
+        <label for="2">2</label>
+        <input type="radio" name="questao2" id="3" value="3">
+        <label for="3">3</label>
+        <input type="radio" name="questao2" id="4" value="4">
+        <label for="4">4</label>
+        <input type="radio" name="questao2" id="5" value="5">
+        <label for="5">5</label>
+        <h6>Você recomendaria nossos produtos/serviços?</h6>
+        <input type="radio" name="questao3" id="1" value="1">
+        <label for="1">1</label>
+        <input type="radio" name="questao3" id="2" value="2">
+        <label for="2">2</label>
+        <input type="radio" name="questao3" id="3" value="3">
+        <label for="3">3</label>
+        <input type="radio" name="questao3" id="4" value="4">
+        <label for="4">4</label>
+        <input type="radio" name="questao3" id="5" value="5">
+        <label for="5">5</label>
+        <h6>Como você avaliaria o valor do produto/serviço com relação aos seus custos?</h6>
+        <input type="radio" name="questao4" id="1" value="1">
+        <label for="1">1</label>
+        <input type="radio" name="questao4" id="2" value="2">
+        <label for="2">2</label>
+        <input type="radio" name="questao4" id="3" value="3">
+        <label for="3">3</label>
+        <input type="radio" name="questao4" id="4" value="4">
+        <label for="4">4</label>
+        <input type="radio" name="questao4" id="5" value="5">
+        <label for="5">5</label>
+        <h6>Como você avaliaria sua experiência mais recente conosco?
+        </h6>
+        <input type="radio" name="questao5" id="1" value="1">
+        <label for="1">1</label>
+        <input type="radio" name="questao5" id="2" value="2">
+        <label for="2">2</label>
+        <input type="radio" name="questao5" id="3" value="3">
+        <label for="3">3</label>
+        <input type="radio" name="questao5" id="4" value="4">
+        <label for="4">4</label>
+        <input type="radio" name="questao5" id="5" value="5">
+        <label for="5">5</label>
+        <h6>Qual é a probabilidade de você comprar conosco novamente?</h6>
+        <input type="radio" name="questao6" id="1" value="1">
+        <label for="1">1</label>
+        <input type="radio" name="questao6" id="2" value="2">
+        <label for="2">2</label>
+        <input type="radio" name="questao6" id="3" value="3">
+        <label for="3">3</label>
+        <input type="radio" name="questao6" id="4" value="4">
+        <label for="4">4</label>
+        <input type="radio" name="questao6" id="5" value="5">
+        <label for="5">5</label>
+      </div>
+
+      <!--fim do questionário -->
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <footer>
+    <p>Feito por: <a href="https://github.com/genildon-barreto" target="_blank">Genildon Barreto</a></p>
+  </footer>
+</body>
+</html>
